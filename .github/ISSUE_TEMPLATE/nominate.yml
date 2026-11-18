@@ -1,0 +1,50 @@
+name: 提名项目
+description: 向 RepoKeepers 推荐一个需要继续维护的开源项目
+title: "[项目提名] "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 项目名称
+      placeholder: ExampleProject
+    validations:
+      required: true
+
+  - type: input
+    id: repository
+    attributes:
+      label: 原项目地址(如404可不填)
+      placeholder: https://github.com/example/project
+
+  - type: dropdown
+    id: reason
+    attributes:
+      label: 项目现状
+      options:
+        - 已归档
+        - 长期停止维护
+        - 原维护团队退出
+        - 平台下架
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 项目介绍及提名原因
+      description: 简单介绍项目，以及为什么需要接手
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: 许可证
+      description: 原项目仓库中的LICENSE文件
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 其他信息
+      description: 相关公告、现有维护者、可用源码(项目已下架时)等

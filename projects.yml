@@ -1,0 +1,11 @@
+# example
+# projects:
+#   - name: ExampleProject
+#     description: An example open-source project.
+#     repository: https://github.com/example/project
+#     original: https://github.com/example/original
+#     status: maintained
+#     maintainers:
+#       - example-user
+
+projects: []
